@@ -497,12 +497,14 @@ html {
     top:20%;
   }
   .overlay{
-    position:absolute;
-   width: 90%;
-   margin:0 auto;
-   font-size:14px;
-   padding-top:50%;
+   padding-top:55%;
    
+  }
+  .content_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
  .img{
    height:250px;
@@ -513,7 +515,11 @@ html {
    background-repeat: no-repeat;
    background-size: cover;
    margin:0 auto;
+   position: absolute;
    z-index:10000!important;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
   
  }
  .arrow-1{
@@ -522,14 +528,10 @@ html {
   background: #f06a6a;
   opacity: 0.5;
   border-radius: 50%;
-  position:relative;
   margin:0 auto;
-  
-  /* position: absolute;
-  top:-10%;
-   right:-10%; */
-   
+  position: relative;
    z-index:-3;
+  
    animation: zoomIn infinite;
 }
  h1 {
@@ -539,6 +541,7 @@ html {
 .icon_social{
   display:flex;
   justify-content: center;
+  margin:20px 0;
 }
 
 .type-animation {
@@ -548,10 +551,12 @@ html {
   padding-right: 0.08em;
   position: relative;
 }
-.content_carousel h1{
+.content_about .content_carousel h1{
   font-size:2rem;
   color:rgba(71, 2, 35, 0.7);
   font-weight: 500;
+  margin:20px 0;
+  text-align: center;
 }
 .type-animation:after {
   content: "";
@@ -698,10 +703,10 @@ button:hover, button:focus {
   #app:hover {
     opacity: 0.8;
   }
-  .col_carousel{
+  /* .col_carousel{
     display:flex;
     justify-content: center;
-  }
+  } */
   
   #app {
     display: grid;
@@ -709,7 +714,7 @@ button:hover, button:focus {
     align-items: center;
     max-width:100%;
     padding-bottom: 4vmin;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background: #ede8e2;
     color: #3a3535;
@@ -717,6 +722,12 @@ button:hover, button:focus {
     margin:0 auto;
     padding:0 0 0 40px;
   }
+  /* .content{
+    border: 1px solid red;
+  }
+  .right_content{
+    border: 1px solid yellow;
+  } */
  
   
   body {
@@ -725,9 +736,33 @@ button:hover, button:focus {
   }
   .carousel_between{
     width:100%;
-    margin:0 auto;
   }
-  
+  .carousel_between_template{
+    position: absolute;
+    height:530px;
+    width:90%;
+    margin:0 auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -36%);
+    display: flex;
+   
+  }
+  .content_about{
+    width:50%;
+    position: relative;
+  }
+  .content_infor{
+    width:90%;
+    margin:15px auto;
+    height:500px;
+    position: relative;
+    
+  }
+  .content_app{
+    width:50%;
+    height:530px;
+  }
   .title {
     padding-left: 1em;
     grid-column: 1/-1;
