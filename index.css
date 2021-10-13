@@ -524,7 +524,7 @@ html {
   border-radius: 50%;
   position:relative;
   margin:0 auto;
-  margin-top:-50%;
+  
   /* position: absolute;
   top:-10%;
    right:-10%; */
@@ -714,7 +714,8 @@ button:hover, button:focus {
     background: #ede8e2;
     color: #3a3535;
     width:100%;
-    margin:0 auto
+    margin:0 auto;
+    padding:0 0 0 40px;
   }
  
   
@@ -722,13 +723,17 @@ button:hover, button:focus {
    
     background: #e6ded7;
   }
+  .carousel_between{
+    width:100%;
+    margin:0 auto;
+  }
   
   .title {
     padding-left: 1em;
     grid-column: 1/-1;
     grid-row: 1;
     font-family: "Prata", serif;
-    font-size: 6vw;
+    font-size: 5vw;
     width: 100%;
     z-index: 2;
   }
