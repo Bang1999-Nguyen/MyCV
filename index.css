@@ -8,7 +8,7 @@
 }
 #about{
   background-color: white;
-  height:135vh;
+  height:125vh;
 }
 html {
     scroll-behavior: smooth;
@@ -422,41 +422,7 @@ html {
  
   color: #060e33;
 }
- /* input[type=checkbox]:checked ~ .btn {
-  background: #ddced9;
-  border-radius: 0px;
-  border: none;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-left: 200px;
-  padding-right: 200px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
- input[type=checkbox]:checked ~ .btn:before {
-  width: 100%;
-  content: "";
-  color: #fff;
-  text-align: center;
-  line-height: 70px;
-  transition: all 3.5s linear;
-}
- input[type=checkbox]:checked ~ .btn:after {
-  height: calc(100% - 3px);
-  color: #060e33;
-  transition: all 0.3s ease-in-out;
-  transition-delay: 3.5s;
-}
- input[type=checkbox]:checked ~ .btn .me {
-  display: none;
-}
- input[type=checkbox]:checked ~ .btn .mo {
-  transition: bottom 0.4s ease, opacity 1s ease;
-  transition-delay: 0.3s;
-  height: auto;
-  width: auto;
-  bottom: 0px;
-  opacity: 1;
-} */
+
 .check {
   display: none;
 }
@@ -1142,7 +1108,7 @@ button:hover, button:focus {
   height:800px;
   position: absolute;
  top: 50%;left:50%;
- transform:translate(-50%, -45%)
+ transform:translate(-50%, -50%)
 }
 
 .resume_title{
@@ -1602,7 +1568,7 @@ grid-gap:20px
 }
 /* SKILL */
 #skill{
-  height:165vh;
+  height:158vh;
   position:relative;
   background-color:#fff;
   
@@ -1780,7 +1746,7 @@ grid-auto-rows: minmax(200px, auto);
   margin:0 auto;
   height:950px;
   position:relative;
-  
+
 }
 .section{
   position: relative;
