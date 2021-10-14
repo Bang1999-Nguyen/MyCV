@@ -1151,6 +1151,7 @@ button:hover, button:focus {
   padding:10px 0;
   letter-spacing: 0.2rem;
 }
+
 .resume_title span{
 color:rgb(136, 7, 33)
 }
@@ -1601,11 +1602,12 @@ grid-gap:20px
 }
 /* SKILL */
 #skill{
-  height:170vh;
+  height:175vh;
   position:relative;
   background-color:#fff;
   
 }
+
 .skill_overlay{
   position:absolute;
   bottom:0;
@@ -1623,7 +1625,9 @@ top: 8%;transform: translate(-50%, 0%);
 height:auto;
 grid-auto-rows: minmax(200px, auto);
   grid-gap: 20px;
+  
 }
+
 .skill__overlay{
   position:absolute;
   right:20%;
