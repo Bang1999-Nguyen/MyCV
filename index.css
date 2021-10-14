@@ -1142,7 +1142,7 @@ button:hover, button:focus {
   height:800px;
   position: absolute;
  top: 50%;left:50%;
- transform:translate(-50%, -49%)
+ transform:translate(-50%, -45%)
 }
 
 .resume_title{
@@ -1602,7 +1602,7 @@ grid-gap:20px
 }
 /* SKILL */
 #skill{
-  height:175vh;
+  height:165vh;
   position:relative;
   background-color:#fff;
   
@@ -1769,7 +1769,7 @@ grid-auto-rows: minmax(200px, auto);
 }
 /* portfolio */
 #portfolio{
-  height:168vh;
+  height:156vh;
   background-color: crimson;
   width:100%;
   padding:20px 0;
