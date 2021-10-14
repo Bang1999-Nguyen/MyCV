@@ -1769,7 +1769,7 @@ grid-auto-rows: minmax(200px, auto);
 }
 /* portfolio */
 #portfolio{
-  height:140vh;
+  height:146vh;
   background-color: crimson;
   width:100%;
   padding:20px 0;
@@ -1778,7 +1778,7 @@ grid-auto-rows: minmax(200px, auto);
 .portfolio_content{
   width:95%;
   margin:0 auto;
-  height:900px;
+  height:950px;
   position:relative;
   
 }
@@ -1805,7 +1805,7 @@ grid-auto-rows: minmax(200px, auto);
 .checkbox:not(:checked) + label{
   position: relative;
   cursor: pointer;
-  margin: 85px auto;
+  margin-top: 150px;
   text-align: center;
   margin-right: 6px;
   margin-left: 6px;
@@ -1878,7 +1878,7 @@ grid-auto-rows: minmax(200px, auto);
   padding: 0;
   margin: 0;
   list-style: none;
-  height: 450px;
+  height: 500px;
   border: none;
   background-size: cover;
   background-position: center;
@@ -1909,7 +1909,7 @@ grid-auto-rows: minmax(200px, auto);
   left:50%;
   transform: translate(-50%, -50%);
   width:800px;
-  height:370px;
+  height:420px;
   background-size: cover;
   background-position: center;
   background-image: url('./img/Screenshot\ \(2156\).png');
