@@ -1769,14 +1769,14 @@ grid-auto-rows: minmax(200px, auto);
 }
 /* portfolio */
 #portfolio{
-  height:146vh;
+  height:168vh;
   background-color: crimson;
   width:100%;
   padding:20px 0;
 }
 /* PORFOLIO */
 .portfolio_content{
-  width:95%;
+  width:100%;
   margin:0 auto;
   height:950px;
   position:relative;
@@ -1805,7 +1805,7 @@ grid-auto-rows: minmax(200px, auto);
 .checkbox:not(:checked) + label{
   position: relative;
   cursor: pointer;
-  margin-top: 150px;
+  margin-top: 250px;
   text-align: center;
   margin-right: 6px;
   margin-left: 6px;
@@ -1818,7 +1818,7 @@ grid-auto-rows: minmax(200px, auto);
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.uA4HiiRD45UqaNDnYwUqpQHaHa&pid=Api&P=0&w=300&h=300');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -1898,7 +1898,7 @@ grid-auto-rows: minmax(200px, auto);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #fff;
-  overflow:hidden;
+  
   z-index:2;
 
  
@@ -1914,6 +1914,58 @@ grid-auto-rows: minmax(200px, auto);
   background-position: center;
   background-image: url('./img/Screenshot\ \(2156\).png');
 }
+.view_porfolio{
+  position:absolute;
+  right:-30px;
+  height:260px;
+  width:500px;
+  top:70%;
+  z-index:99999999!important;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid rgba(220, 20, 60, 0.6);
+  box-shadow: 0 2.8px 2.3px -34px rgb(0 49 52 / 21%), 0 9.4px 7.8px -34px rgb(0 49 52 / 30%), 0 42px 35px -34px rgb(0 49 52 / 51%);
+}
+.infor_portfolio{
+  padding:25px;
+  writing-mode: horizontal-tb
+}
+.infor_portfolio h3{font-size:16px;
+text-align: left;}
+.infor_portfolio h2{
+  font-size:15px;
+  letter-spacing: 0.1rem;
+ padding:3px 0;
+ text-align: left;
+}
+.infor_portfolio a{
+  font-size:14px!important;
+  margin-right:13px;
+  text-decoration: none;
+  padding:8px 10px;
+  background-color: crimson;
+  color:white;
+  border-radius: 5px;
+}
+.infor_portfolio p{
+  font-size:14px;
+  letter-spacing: 0!important;
+  font-weight:600;
+  text-align: justify;
+  line-height:20px;
+  margin-top:5px;
+}
+.infor_portfolio p:nth-child(2){
+  margin-top:-10px;
+}
+.infor_portfolio p:nth-child(3){
+  margin-top:-10px;
+}
+.infor_portfolio span{
+  margin-left:5px;
+  font-weight:400;
+}
+
 .slide-content{
   position:absolute;
   width:100%;
@@ -1952,7 +2004,7 @@ grid-auto-rows: minmax(200px, auto);
 .title_porfolio{
  float:left;
  position:absolute;
- top:30%;
+ top:20%;
  
 }
 .title_porfolio span:first-child{
