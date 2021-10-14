@@ -313,11 +313,11 @@ html {
     box-shadow: 0 0 20px 0 #fbbd61;
 }
 .content_carousel p{
-  width:435px;
-  max-width:435px;
+  width:470px;
+  max-width:470px;
   text-align: justify;
   line-height:28px;
-  font-size:16px;
+  font-size:18px;
   margin:10px auto;
   color:rgba(71, 2, 35, 0.7)
 }
