@@ -172,4 +172,5 @@ function transition() {
 }
 
 cards.forEach(card => card.addEventListener('click', transition));
+
  
