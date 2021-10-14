@@ -1776,7 +1776,7 @@ grid-auto-rows: minmax(200px, auto);
 }
 /* PORFOLIO */
 .portfolio_content{
-  width:90%;
+  width:95%;
   margin:0 auto;
   height:900px;
   position:relative;
@@ -1860,7 +1860,7 @@ grid-auto-rows: minmax(200px, auto);
   top: 6%;
   left:50%;
   display: block;
-  width: 800px;
+  width: 900px;
   z-index: 100;
   padding: 0;
   margin: 0;
@@ -1908,7 +1908,7 @@ grid-auto-rows: minmax(200px, auto);
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  width:700px;
+  width:800px;
   height:370px;
   background-size: cover;
   background-position: center;
