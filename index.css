@@ -1111,6 +1111,7 @@ button:hover, button:focus {
   margin-left: 12px;
   
 }
+
 .leaderboard__value {
   color: #35d8ac;
   font-weight: 700;
@@ -1130,11 +1131,20 @@ button:hover, button:focus {
 }
 /* RESUME */
 #resume{
-  height:165vh;
-  width: 0% !important;
-  
+  height:175vh;
+  width: 100% !important;
+  position: relative!important;
+ 
   
 }
+.resume__body{
+  width:1100px;
+  height:800px;
+  position: absolute;
+ top: 50%;left:50%;
+ transform:translate(-50%, -49%)
+}
+
 .resume_title{
   font-size:30px;
   font-weight: 400;
@@ -1247,12 +1257,10 @@ left:5%;
 grid-gap:20px
 } */
 .grid{
-  width: 1010px;
-  height:auto;
+  width: 1100px;
+  height:800px;
   display:grid;
-  margin:8% 0;
-  position:absolute;
-  left:10%;
+  margin:0;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 20px;
@@ -1307,22 +1315,22 @@ grid-gap:20px
   grid-column: 2 / 4;
 }
 .grid-item h3{
-  font-size:14px;
+  font-size:15px!important;
   line-height:24px;
   color:rgb(136, 7, 33);
   font-weight:500;
 }
 .grid-item h2{
   font-size:15px;
-  color:gray;
+  color:gray!important;
   padding:5px 0;
 }
 .infor li{
   list-style: circle!important;
-  font-size:13.2px;
+  font-size:14.5px!important;
   padding-left: none;
   margin-left: -23px;
-  padding:5px 0;
+  padding:8px 0;
   color:black;
   line-height:23px;
   font-weight:500;
@@ -1341,7 +1349,7 @@ grid-gap:20px
 .infor{
   padding:20px;
 }
-.container .box {
+.gird_overlay .box {
   width: 250px;
   height: 250px;
   position: relative;
@@ -1349,14 +1357,14 @@ grid-gap:20px
   justify-content: center;
   flex-direction: column;
 }
-.container .box .title {
+.gird_overlay .box .title {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   height: 50px;
 }
-.container .box .title .block {
+.gird_overlay .box .title .block {
   width: 0%;
   height: inherit;
   background: #ffb510;
@@ -1364,7 +1372,7 @@ grid-gap:20px
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   display: flex;
 }
-.container .box .title h1 {
+.gird_overlay .box .title h1 {
   font-family: "Poppins";
   color: #fff;
   font-size: 32px;
@@ -1377,7 +1385,7 @@ grid-gap:20px
   align-items: baseline;
   position: relative;
 }
-.container .box .title h1 span {
+.gird_overlay .box .title h1 span {
   width: 0px;
   height: 0px;
   -webkit-border-radius: 50%;
@@ -1393,7 +1401,7 @@ grid-gap:20px
   bottom: 13px;
   right: -12px;
 }
-.container .box .role {
+.gird_overlay .box .role {
   width: 100%;
   position: relative;
   display: flex;
@@ -1401,7 +1409,7 @@ grid-gap:20px
   height: 30px;
   margin-top: -10px;
 }
-.container .box .role .block {
+.gird_overlay .box .role .block {
   width: 0%;
   height: inherit;
   background: #e91e63;
@@ -1410,7 +1418,7 @@ grid-gap:20px
   animation-delay: 2s;
   display: flex;
 }
-.container .box .role p {
+.gird_overlay .box .role p {
   animation: secFadeIn 2s infinite;
   animation-delay: 3.2s;
   opacity: 0;
@@ -1423,7 +1431,7 @@ grid-gap:20px
   margin-top: 10px;
 }
 /* box_four */
-.container .box_four{
+.gird_overlay .box_four{
   width: 250px;
   height: 250px;
   position: relative;
@@ -1432,14 +1440,14 @@ grid-gap:20px
   flex-direction: column;
   margin-top: 0px;
 }
-.container .box_four .title {
+.gird_overlay .box_four .title {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   height: 50px;
 }
-.container .box_four .title .block {
+.gird_overlay .box_four .title .block {
   width: 0%;
   height: inherit;
   background: #ffb510;
@@ -1447,7 +1455,7 @@ grid-gap:20px
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   display: flex;
 }
-.container .box_four .title h1 {
+.gird_overlay .box_four .title h1 {
   font-family: "Poppins";
   color: #fff;
   font-size: 32px;
@@ -1460,7 +1468,7 @@ grid-gap:20px
   align-items: baseline;
   position: relative;
 }
-.container .box_four .title h1 span {
+.gird_overlay .box_four .title h1 span {
   width: 0px;
   height: 0px;
   -webkit-border-radius: 50%;
@@ -1476,7 +1484,7 @@ grid-gap:20px
   bottom: 13px;
   right: -12px;
 }
-.container .box_four .role {
+.gird_overlay .box_four .role {
   width: 100%;
   position: relative;
   display: flex;
@@ -1484,7 +1492,7 @@ grid-gap:20px
   height: 30px;
   margin-top: -10px;
 }
-.container .box_four .role .block {
+.gird_overlay .box_four .role .block {
   width: 0%;
   height: inherit;
   background: #e91e63;
@@ -1493,7 +1501,7 @@ grid-gap:20px
   animation-delay: 2s;
   display: flex;
 }
-.container .box_four .role p {
+.gird_overlay .box_four .role p {
   animation: secFadeIn 2s infinite;
   animation-delay: 3.2s;
   opacity: 0;
