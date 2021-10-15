@@ -38,6 +38,7 @@ html {
 .glitch {
     position: relative;
     color:white;
+    text-align: left;
     font-size: 1.7em;
     letter-spacing: 0.1em;
     /* Animation provies a slight random skew. Check bottom of doc
@@ -713,6 +714,10 @@ button:hover, button:focus {
     transform: translate(-50%, -36%);
     display: flex;
    
+  }
+  #header{
+    width:100%;
+    margin:0 auto;
   }
   .content_about{
     width:50%;
