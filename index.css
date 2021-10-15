@@ -1103,8 +1103,8 @@ button:hover, button:focus {
 }
 /* RESUME */
 #resume{
-  height:960px!important;
-  max-height:960px;
+  height:1000px!important;
+  max-height:1000px;
   width: 100% !important;
   position: relative!important;
  
@@ -1115,7 +1115,7 @@ button:hover, button:focus {
   height:800px;
   position: absolute;
  top: 50%!important;left:50%;
- transform:translate(-50%, -50%)
+ transform:translate(-50%, -48%)
 }
 
 .resume_title{
@@ -1575,8 +1575,8 @@ grid-gap:20px
 }
 /* SKILL */
 #skill{
-  height:1030px!important;
-  max-height:1030px;
+  height:1000px!important;
+  max-height:1000px;
   position:relative;
   background-color:#fff;
   
@@ -2193,8 +2193,8 @@ text-align: left;}
 }
 /* Footer */
 #footer{
-  height:550px!important;
-  max-height:550px;
+  height:620px!important;
+  max-height:620px;
   /* background-color: rgba(71, 2, 35, 0.7); */
   background-color: transparent;
   position: relative;
