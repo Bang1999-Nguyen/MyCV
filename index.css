@@ -2184,7 +2184,7 @@ text-align: left;}
 }
 /* Footer */
 #footer{
-  height:105vh;
+  height:100vh!important;
   /* background-color: rgba(71, 2, 35, 0.7); */
   background-color: transparent;
   position: relative;
