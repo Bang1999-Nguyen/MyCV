@@ -38,7 +38,6 @@ html {
 .glitch {
     position: relative;
     color:white;
-    text-align: left!important;
     font-size: 1.7em;
     letter-spacing: 0.1em;
     /* Animation provies a slight random skew. Check bottom of doc
