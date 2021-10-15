@@ -1,6 +1,6 @@
 #carousel{
-    height:850px;
-    max-height:850px;
+    height:845px;
+    max-height:845px;
     /* background-image: url('./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg'); */
     width:100%;
     background-repeat: no-repeat;
@@ -682,7 +682,8 @@ button:hover, button:focus {
     align-items: center;
     max-width:100%;
     padding-bottom: 4vmin;
-    height: 95vh;
+    height: 550px!important;
+    max-height:550px!important;
     width: 100%;
     background: #ede8e2;
     color: #3a3535;position:relative;
