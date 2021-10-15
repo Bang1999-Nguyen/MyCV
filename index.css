@@ -9,8 +9,8 @@
 }
 #about{
   background-color: white;
-  height:740px;
-  max-height:740px;
+  height:760px;
+  max-height:760px;
 }
 html {
     scroll-behavior: smooth;
@@ -1147,7 +1147,9 @@ row1: 350;
 row3: 350;
 row2:100;
  */
-
+html{
+  overflow: auto;
+}
 .resume_item img{
   border-radius: 5px;
 }
