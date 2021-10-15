@@ -1,6 +1,6 @@
 #carousel{
-    height:830px;
-    max-height:830px;
+    height:850px;
+    max-height:850px;
     /* background-image: url('./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg'); */
     width:100%;
     background-repeat: no-repeat;
@@ -707,12 +707,13 @@ button:hover, button:focus {
   }
   .carousel_between_template{
     position: absolute;
-    height:530px;
+    height:600px;
     width:90%;
     margin:0 auto;
-    top:50%;
+    top:0%;
     left:50%;
-    transform: translate(-50%, -36%);
+    transform: translate(-50%, -0%);
+    padding:10% 0!important;
     display: flex;
    
   }
@@ -723,6 +724,7 @@ button:hover, button:focus {
   .content_about{
     width:50%;
     position: relative;
+    padding-top: 10%!important;
   }
   .content_infor{
     width:90%;
@@ -2210,9 +2212,11 @@ text-align: left;}
   top:50%;
   left:50%;
   transform: translate(-50%, -50%)
+  
 }
 .footer_header{
   text-align: left;
+  padding-top:20px;
 }
 .footer_header h1{
   font-size:40px;
