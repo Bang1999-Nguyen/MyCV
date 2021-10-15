@@ -2206,18 +2206,19 @@ text-align: left;}
   
 }
 .footer{
-  width:65%;
+  width:68%;
   margin:0 auto;
-  height:90vh;
+ 
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  padding:40px;
   
 }
 .footer_header{
   text-align: left;
-  padding-top:20px;
+ 
 }
 .footer_header h1{
   font-size:40px;
@@ -2314,7 +2315,7 @@ text-align: left;}
   font-size: 14px!important;
   letter-spacing: 0.05rem;
   outline: 0;
-  width:270px;
+  width:250px;
   border: 0.5px solid gray;
 }
 .subscribe form{
