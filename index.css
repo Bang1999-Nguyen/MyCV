@@ -438,7 +438,12 @@ html {
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
-
+.navbar-nav{
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
   #header .navbar .navbar-nav .nav-item.active::after{
     content:'';
     width:80px;
@@ -446,7 +451,11 @@ html {
     background-image: 
     linear-gradient(to right, crimson,#d2379b );
     display: block;
-    transition: all 0.5s;
+    transition: all 0.3s
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 15px; */
 }
   #header .navbar .navbar-nav .nav-item{
   padding:0 12px;
