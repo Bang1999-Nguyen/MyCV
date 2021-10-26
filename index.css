@@ -451,7 +451,7 @@ html {
     background-image: 
     linear-gradient(to right, crimson,#d2379b );
     display: block;
-    transition: all 0.3s
+    transition: all 0.3s ease
     /* position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1682,6 +1682,11 @@ grid-auto-rows: minmax(200px, auto);
   opacity: 0.9;
   transform: scale(3);
   transition: all 0.3s linear 0s;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between!important;
+  align-items: center;
 }
 
 .our-team:hover .picture::before {
