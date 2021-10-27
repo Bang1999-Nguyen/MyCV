@@ -22,79 +22,7 @@
 html {
     scroll-behavior: smooth;
   }
-  #logo {
-    position: absolute;
-    top: 80%;
-    left: 0;
-    margin-top:-40px;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-    width: 100px;
-    height: 25px;
-    margin-left:0px;
-  }
-  #logo .c1, #logo .c2 {
-    position: absolute;
-    top: 0;
-    height: 65px;
-    width: 65px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    content: "";
-  }
-  #logo .c1 {
-    left: 0;
-    background: rgba(99, 166, 159, 0.5);
-  }
-  #logo .c2 {
-    right: 0;
-    background: rgba(242, 89, 75, 0.5);
-  }
-  #logo .d, #logo .h, #logo .h:before, #logo .h:after {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.75);
-  }
-  .logo {
-    position: relative;
-    width: 22rem;
-    height: 22rem;
-    border-radius: 50%;
-    border-left: 40px solid #FBBC05;
-    border-right: 40px solid #4385F6;
-    border-top: 40px solid #EC4336;
-    border-bottom: 40px solid #34A856;
-  }
-  
-  .logo:before {
-    content: '';
-    position: absolute;
-    top: -150px;
-    right: -150px;
-    border-top: 110px solid transparent;
-    border-right: 110px solid #fff;
-    border-bottom: 110px solid transparent;
-    border-left: 100px solid transparent;
-    transform: rotate(90deg);
-  }
-  
-  .logo:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -45px;
-    width: 110px;
-    height: 40px;
-    background: #4385F6;
-    transform: translate(-5px, -20px);
-    border-bottom-right-radius: 15px;
-  }
-  
+ 
   .card {
     background-color: #efefef;
     height: 100px;
@@ -169,42 +97,67 @@ html {
     font-size:20px;
   }
   .bottom h2{
-    position: absolute;
+    position: relative;
    color:#ffff;
    top:-10px;
-   left:50px;;
+   left:10px;;
    width:400px;
-   font-weight:bold;
+   font-weight:700;
    letter-spacing: 5px;
-  
+   -webkit-text-stroke: 2px crimson;
+   font-size:28px;
+  }
+  .bottom h2::before{
+    content : attr(data-text);
+    position: absolute;
+    top:0;
+    left:0px;
+    width: 0px;height:100%;
+    color:crimson;
+    -webkit-text-stroke: 0px transparent;
+    border-right: 2px solid crimson;
+    overflow: hidden;
+    animation: animateS 7s linear infinite
+  }
+  @keyframes animateS{
+    0%, 10%, 100%{
+      width:0;
+    }
+    70%, 90%{
+      width:32%
+    }
   }
   .bottom{
     display:flex;
     justify-content: center;
+    margin-top:20px;
     
   }
-  .circle{
+  .circle__sec{
     width:40px;
     height:40px;
     background: linear-gradient(to bottom left, #f9b446 15%, rgba(234, 47, 152, 0.8));
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    margin-top:-5px;
+    
   }
-  .circle h3{
+  .circle__sec h3{
     line-height:40px;
     margin:0 12px;
     font-size:22px;
     color:#fff
   }
-  .bottom h2:nth-child(1){
+  
+  /* .bottom h2:nth-child(1){
     color:transparent;
     -webkit-text-stroke: 2px crimson
   }
   .bottom h2:nth-child(2){
     color:crimson;
     animation: animate 4s ease-in-out infinite;
-  }
+  } */
   @keyframes animate {
     0%, 100%{
       clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
@@ -283,207 +236,6 @@ html {
     }
   }
   /* Other styles */
-  
-  
-  svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .sign {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    background-image: radial-gradient(
-      ellipse 50% 35% at 50% 50%,
-      #6b1839,
-      transparent
-    );
-    transform: translate(-50%, -50%);
-    letter-spacing: 2;
-   
-    font-family: "Clip";
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    animation: shine 2s forwards, flicker 3s infinite;
-  }
-  
-  @keyframes blink {
-    0%,
-    22%,
-    36%,
-    75% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-    28%,
-    33% {
-      color: #ff65bd;
-      text-shadow: none;
-    }
-    82%,
-    97% {
-      color: #ff2483;
-      text-shadow: none;
-    }
-  }
-  
-  .flicker {
-    animation: shine 2s forwards, blink 3s 2s infinite;
-  }
-  
-  .fast-flicker {
-    animation: shine 2s forwards, blink 10s 1s infinite;
-  }
-  
-  @keyframes shine {
-    0% {
-      color: #6b1839;
-      text-shadow: none;
-    }
-    100% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-  }
-  
-  @keyframes flicker {
-    from {
-      opacity: 1;
-    }
-  
-    4% {
-      opacity: 0.9;
-    }
-  
-    6% {
-      opacity: 0.85;
-    }
-  
-    8% {
-      opacity: 0.95;
-    }
-  
-    10% {
-      opacity: 0.9;
-    }
-  
-    11% {
-      opacity: 0.922;
-    }
-  
-    12% {
-      opacity: 0.9;
-    }
-  
-    14% {
-      opacity: 0.95;
-    }
-  
-    16% {
-      opacity: 0.98;
-    }
-  
-    17% {
-      opacity: 0.9;
-    }
-  
-    19% {
-      opacity: 0.93;
-    }
-  
-    20% {
-      opacity: 0.99;
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    26% {
-      opacity: 0.94;
-    }
-  
-    28% {
-      opacity: 0.98;
-    }
-  
-    37% {
-      opacity: 0.93;
-    }
-  
-    38% {
-      opacity: 0.5;
-    }
-  
-    39% {
-      opacity: 0.96;
-    }
-  
-    42% {
-      opacity: 1;
-    }
-  
-    44% {
-      opacity: 0.97;
-    }
-  
-    46% {
-      opacity: 0.94;
-    }
-  
-    56% {
-      opacity: 0.9;
-    }
-  
-    58% {
-      opacity: 0.9;
-    }
-  
-    60% {
-      opacity: 0.99;
-    }
-  
-    68% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.9;
-    }
-  
-    72% {
-      opacity: 0.95;
-    }
-  
-    93% {
-      opacity: 0.93;
-    }
-  
-    95% {
-      opacity: 0.95;
-    }
-  
-    97% {
-      opacity: 0.93;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
   
   
   
@@ -737,238 +489,6 @@ html {
       transform: rotate(-15deg) skew(-15deg, -15deg);
       opacity: 1;
     }
-  }
-  .mdn::before{
-    content:'';
-    position: absolute;
-    width: 19rem;
-    height: 14rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    
-    background: linear-gradient(128deg, transparent 51%, black 53%, black 70%, transparent 72%) no-repeat bottom left,
-      linear-gradient(108deg, transparent 38%, black 40%, black 63%, transparent 65%) no-repeat bottom left 6.3rem,
-      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat bottom right 4.8rem,
-      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 2.1rem left 5.7rem,
-      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 1.2rem left 8.9rem,
-      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 4.9rem top 6.9rem,
-      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 5.7rem top 4.3rem,
-      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 8.4rem top 2.4rem,
-      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 66%) no-repeat bottom 2.8rem left 2.7rem,
-      linear-gradient(112deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat top 4rem left 2.8rem,
-      linear-gradient(150deg, transparent 47%, black 48%, black 66%, transparent 68%) no-repeat top 1.1rem left 3.5rem,
-      linear-gradient(151deg, transparent 55%, black 56%, black 88%, transparent 90%) no-repeat top 2.5rem left 1rem,
-      linear-gradient(150deg, transparent 57%, black 58%, black 88%, transparent 90%) no-repeat top 4.5rem left .8rem,
-      linear-gradient(150deg, transparent 60%, black 63%, black 100%) no-repeat bottom 4.5rem left .8rem,
-      linear-gradient(150deg, transparent 50%, black 53%, black 100%) no-repeat bottom 2.8rem left 1.8rem,
-      linear-gradient(15deg, transparent 16%, black 20%, black 62%, transparent 65%) no-repeat top 1rem left 8.5rem,
-      linear-gradient(162deg, transparent 30%, black 32%, black 70%, transparent 66%) no-repeat top 1.6rem right 6.2rem ,
-      linear-gradient(45deg, transparent 31%, black 32%, black 52%, transparent 53%) no-repeat top 1.6rem right 3.5rem,
-       linear-gradient(20deg, transparent 30%, black 31%, black 52%, transparent 54%) no-repeat top 2.8rem right 1.6rem ,
-      linear-gradient(45deg, transparent 27%, black 29%, black 51%, transparent 52%) no-repeat top 3.8rem right .5rem,
-      linear-gradient(90deg, transparent 38%, black 38%, black 60%) no-repeat top 6rem right .5rem,
-      linear-gradient(45deg, transparent 35%, black 35%, black 70%) no-repeat top 4.8rem right 1.6rem,
-      linear-gradient(108deg, black 40%, transparent 40%) no-repeat bottom 4.4rem right .1rem,
-      linear-gradient(150deg, transparent 23%, black 25%, black 55%, transparent 57%) no-repeat bottom 3rem right 1rem,
-      linear-gradient(15deg, transparent 40%, black 41%, black 60%, transparent 62%) no-repeat bottom 2.8rem right 3.5rem,
-      linear-gradient(110deg, transparent 45%, black 45%, black 65%, transparent 65%) no-repeat top 3.6rem right 5.8rem,
-      -webkit-radial-gradient(center center, ellipse contain, white 28%, transparent 30%)no-repeat right 4.9rem top 3.5rem,
-      linear-gradient(40deg, transparent 52%, #F30021 52%, #F30021 75%, transparent 75%) no-repeat top 3.2rem right 5rem,
-      linear-gradient(38deg, transparent 30%, #F30021 30%, #F30021 52%, transparent 52%) no-repeat top 3.8rem right 6rem,
-      linear-gradient(162deg, transparent 30%, black 30%, black 70%, transparent 65%) no-repeat top 3.3rem right 5.6rem,
-      linear-gradient(162deg, transparent 10%, black 25%, black 55%, transparent 55%) no-repeat top 4rem right 5rem,
-      linear-gradient(15deg, transparent 40%, black 42%, black 59%, transparent 61%) no-repeat top 6rem right 1rem,
-      linear-gradient(15deg, transparent 43%, black 45%, black 59%, transparent 59%) no-repeat top 7.5rem right 1rem,
-      
-      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 4rem right 7.8rem,
-      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 5.1rem right 8.3rem,
-      -webkit-radial-gradient(center center, circle contain, #F30021 0%, #F30021 33%, black 33%, black 50%, transparent 50%)no-repeat right 6.5rem top 3.2rem,
-      -webkit-radial-gradient(center center, circle contain, #F30021 50%, transparent 52%)no-repeat right 5.6rem top 2.5rem,
-      -webkit-radial-gradient(center center, circle contain, black 52%, transparent 53%)no-repeat right 4.6rem top 1.5rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 6.9rem right 5.1rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.1rem right 4.3rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.3rem right 3.5rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.5rem right 2.6rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.7rem right 1.8rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.7rem right .8rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.5rem right 1.6rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.3rem right 2.5rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.1rem right 3.3rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 6.8rem right 4.1rem,
-      linear-gradient(15deg, transparent 45%, black 45%, black 70%, transparent 59%) no-repeat top 6.5rem right 1.1rem,
-      linear-gradient(45deg, gold 30%, black 35%, black 50%, transparent 55%) no-repeat top 4.7rem right 6.2rem; 
-    
-    /*FF*/
-    
-    background: linear-gradient(128deg, transparent 51%, black 53%, black 70%, transparent 72%) no-repeat bottom left,
-      linear-gradient(108deg, transparent 38%, black 40%, black 63%, transparent 65%) no-repeat bottom left 6.3rem,
-      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat bottom right 4.8rem,
-      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 2.1rem left 5.7rem,
-      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 1.2rem left 8.9rem,
-      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 4.9rem top 6.9rem,
-      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 5.7rem top 4.3rem,
-      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 8.4rem top 2.4rem,
-      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 66%) no-repeat bottom 2.8rem left 2.7rem,
-      linear-gradient(112deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat top 4rem left 2.8rem,
-      linear-gradient(150deg, transparent 47%, black 48%, black 66%, transparent 68%) no-repeat top 1.1rem left 3.5rem,
-      linear-gradient(151deg, transparent 55%, black 56%, black 88%, transparent 90%) no-repeat top 2.5rem left 1rem,
-      linear-gradient(150deg, transparent 57%, black 58%, black 88%, transparent 90%) no-repeat top 4.5rem left .8rem,
-      linear-gradient(150deg, transparent 60%, black 63%, black 100%) no-repeat bottom 4.5rem left .8rem,
-      linear-gradient(150deg, transparent 50%, black 53%, black 100%) no-repeat bottom 2.8rem left 1.8rem,
-      linear-gradient(15deg, transparent 16%, black 20%, black 62%, transparent 65%) no-repeat top 1rem left 8.5rem,
-      linear-gradient(162deg, transparent 30%, black 32%, black 70%, transparent 66%) no-repeat top 1.6rem right 6.2rem,
-      linear-gradient(45deg, transparent 31%, black 32%, black 52%, transparent 53%) no-repeat top 1.6rem right 3.5rem,
-       linear-gradient(20deg, transparent 30%, black 31%, black 52%, transparent 54%) no-repeat top 2.8rem right 1.6rem,
-      linear-gradient(45deg, transparent 27%, black 29%, black 51%, transparent 52%) no-repeat top 3.8rem right .5rem,
-      linear-gradient(90deg, transparent 38%, black 38%, black 60%) no-repeat top 6rem right .5rem,
-      linear-gradient(45deg, transparent 35%, black 35%, black 70%) no-repeat top 4.8rem right 1.6rem,
-      linear-gradient(108deg, black 40%, transparent 40%) no-repeat bottom 4.4rem right .1rem,
-      linear-gradient(150deg, transparent 23%, black 25%, black 55%, transparent 57%) no-repeat bottom 3rem right 1rem,
-      linear-gradient(15deg, transparent 40%, black 41%, black 60%, transparent 62%) no-repeat bottom 2.8rem right 3.5rem,
-      linear-gradient(110deg, transparent 45%, black 45%, black 65%, transparent 65%) no-repeat top 3.6rem right 5.8rem,
-      -moz-radial-gradient(center center, ellipse contain, white 28%, transparent 30%)no-repeat right 4.9rem top 3.5rem,
-      linear-gradient(40deg, transparent 52%, #F30021 52%, #F30021 75%, transparent 75%) no-repeat top 3.2rem right 5rem,
-      linear-gradient(38deg, transparent 30%, #F30021 30%, #F30021 52%, transparent 52%) no-repeat top 3.8rem right 6rem,
-      linear-gradient(162deg, transparent 30%, black 30%, black 70%, transparent 65%) no-repeat top 3.3rem right 5.6rem,
-      linear-gradient(162deg, transparent 10%, black 25%, black 55%, transparent 55%) no-repeat top 4rem right 5rem,
-      linear-gradient(15deg, transparent 40%, black 42%, black 59%, transparent 61%) no-repeat top 6rem right 1rem,
-      linear-gradient(15deg, transparent 43%, black 45%, black 59%, transparent 59%) no-repeat top 7.5rem right 1rem,
-      
-      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 4rem right 7.8rem,
-      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 5.1rem right 8.3rem,
-      -moz-radial-gradient(center center, circle contain, #F30021 0%, #F30021 33%, black 33%, black 50%, transparent 50%)no-repeat right 6.5rem top 3.2rem,
-      -moz-radial-gradient(center center, circle contain, #F30021 50%, transparent 52%)no-repeat right 5.6rem top 2.5rem,
-      -moz-radial-gradient(center center, circle contain, black 52%, transparent 53%)no-repeat right 4.6rem top 1.5rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 6.9rem right 5.1rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.1rem right 4.3rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.3rem right 3.5rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.5rem right 2.6rem,
-      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.7rem right 1.8rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.7rem right .8rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.5rem right 1.6rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.3rem right 2.5rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.1rem right 3.3rem,
-      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 6.8rem right 4.1rem,
-      linear-gradient(15deg, transparent 45%, black 45%, black 70%, transparent 59%) no-repeat top 6.5rem right 1.1rem,
-      linear-gradient(45deg, gold 30%, black 35%, black 50%, transparent 55%) no-repeat top 4.7rem right 6.2rem; 
-    background-size: 
-      5.5rem 2.8rem
-      ,3rem 5.5rem
-      ,3rem 4rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,3rem 4rem
-      ,3rem 3.3rem
-      ,5rem 3.3rem
-      ,4rem 3rem
-      ,3.5rem 3rem
-      ,3rem 3rem
-      ,3rem 2rem
-      ,3rem 1.8rem
-      ,2.5rem 1.7rem
-      ,2.8rem 2.8rem
-      ,2.8rem 2.8rem
-      ,1.1rem 2.8rem
-      ,1rem 2rem
-      ,.5rem 2rem
-      ,1rem 1.6rem
-      ,2.5rem 1.7rem
-      ,6.5rem 3rem
-      ,1rem 1rem
-      ,2.8rem 1.3rem
-      ,1.5rem 1.3rem 
-      ,2rem 1.3rem 
-      ,2rem 1.3rem
-      ,2rem 1.3rem
-      ,6rem 2rem
-      ,6.9rem 2rem
-      
-      ,2.3rem 3rem
-      ,2.3rem 1rem
-      ,5.5rem 6rem
-      ,7.5rem 7.5rem
-      ,9.5rem 10rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,1rem 1rem
-      ,7rem 3.2rem
-      ,1.1rem 2rem;
-    
-    background-color: #F30021;
-  }
-  
-  .mdn::after{
-    content:'MDN';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 19rem;
-    font-family: 'Maven Pro';
-    font-size: 8rem;
-    color: #FFF;
-    text-align: center;
-  }
-  .card::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -78%;
-    left: -15%;
-    box-shadow: 1px 1px 5px #000;
-    background-color: #f2f2f2;
-    border-right: 30px solid #d5493c;
-    border-bottom: 30px solid #d5493c;
-    transform: rotate(51deg) skewY(-12deg);
-  }
-  
-  .netflix-stick {
-    width: 4vh;
-    height:15vh;
-    background-color: #b1060f;
-    position: absolute;
-    left:0;
-    top:30px;
-  }
-  
-  .netflix-stick:before {
-    content: "";
-    position: absolute;
-    width: 4vh;
-    height: 15vh;
-    background-color: #e50913;
-    transform: skew(20deg);
-    left: 2.5vh;
-    box-shadow: 0 0 2.5vh -1vh black;
-  }
-  
-  .netflix-stick:after {
-    content: "";
-    position: absolute;
-    width: 7vh;
-    height: 30vh;
-    background-color: #b1060f;
-    left: 11vh;
-    z-index: -1;
-  }
-  
-  .thing {
-    width: 7.5vh;
-    height: 2vh;
-    position: absolute;
-   
-    bottom: -1vh;
-    transform: rotateZ(-5deg);
   }
   
   .thing:before {
@@ -1687,12 +1207,15 @@ header{
     background-image: 
     linear-gradient(to right, crimson,#d2379b );
     display: block;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
     /* position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 15px; */
+    transition: all 0.4s ease-in-out;
+   
 }
+
   #header .navbar .navbar-nav .nav-item{
   padding:0 12px;
 
