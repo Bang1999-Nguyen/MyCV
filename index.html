@@ -20,8 +20,32 @@
 
 </head>
 
-<body>
+<body >
   <!-- HEADER -->
+  <div class="loader">
+   
+    <!-- <h2>Mosaic Ripple<br>Loading Animation</h2> -->
+<div class="mosaic-loader">
+  <div class="cell d-0"></div>
+  <div class="cell d-1"></div>
+  <div class="cell d-2"></div>
+  <div class="cell d-3"></div>
+  <div class="cell d-1"></div>
+  <div class="cell d-2"></div>
+  <div class="cell d-3"></div>
+  <div class="cell d-4"></div>
+  <div class="cell d-2"></div>
+  <div class="cell d-3"></div>
+  <div class="cell d-4"></div>
+  <div class="cell d-5"></div>
+  <div class="cell d-3"></div>
+  <div class="cell d-4"></div>
+  <div class="cell d-5"></div>
+  <div class="cell d-6"></div>
+
+</div>
+  </div>
+  <div class="main_Sec">
 
   <div id="header" class="sec">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -81,7 +105,7 @@
                 <div class="cafe-inner">Welcome</div>
               </div>
               <div class="mozart">
-                <div class="mozart-inner">To You</div>
+                <div class="mozart-inner">To My Page</div>
               </div>
             </div>
           </div>
@@ -95,13 +119,13 @@
       </div>
       <div class="content_about">
         <div class="content_infor">
-          <div class="content_carousel_template animate__animated animate__fadeInRight">
+          <div class="content_carousel_template animate__animated animate__fadeInRight animate__delay-2s">
             <div class="img">
             </div>
-            <div class="arrow-1 animated hinge infinite zoomIn">
+            <div class="arrow-1 animated hinge infinite zoomIn animate__delay-2s">
             </div>
           </div>
-          <div class="content_carousel animate__animated animate__fadeInRight">
+          <div class="content_carousel animate__animated animate__fadeInRight animate__delay-2s">
             <div class="overlay">
               <h1>I'm
                 <span class="txt-rotate" data-period="2000"
@@ -586,9 +610,11 @@
   <div class="backtotop ">
     <i class="fas fa-angle-up" id="totop" onclick="backToTop()"></i>
   </div>
+</div>
+
   <!-- Javascript -->
   <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -624,12 +650,20 @@
     }
     activeMenu()
     window.addEventListener('scroll', activeMenu)
+    var loader = document.querySelector('.loader');
+    window.addEventListener('load', function(){
+     
+      setTimeout(() => {
+        loader.style.display = "none"
+       window.scrollTo(0,0)
+      }, 2000);
+    })
+    // document.querySelector('.content_about').style.setProperty('--animate-duration', '7s');
 
   </script>
   <script type="text/javascript">
     function lang1(event) {
       var target = event.target || event.srcElement;
-
     }
     function backToTop() {
       window.scrollTo({
@@ -642,12 +676,13 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      // offset: 400, // offset (in px) from the original trigger point
       delay: 40, // values from 0 to 3000, with step 50ms
     });
   </script>
+ 
   <script src="./index.js">
   </script>
+ 
 </body>
 
 </html>
