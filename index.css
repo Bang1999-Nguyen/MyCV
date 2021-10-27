@@ -17,9 +17,1138 @@
   border: 1px solid red;
   width:100%;
 }
+
+
 html {
     scroll-behavior: smooth;
   }
+  #logo {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    margin-top:-40px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 100px;
+    height: 25px;
+    margin-left:0px;
+  }
+  #logo .c1, #logo .c2 {
+    position: absolute;
+    top: 0;
+    height: 65px;
+    width: 65px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    content: "";
+  }
+  #logo .c1 {
+    left: 0;
+    background: rgba(99, 166, 159, 0.5);
+  }
+  #logo .c2 {
+    right: 0;
+    background: rgba(242, 89, 75, 0.5);
+  }
+  #logo .d, #logo .h, #logo .h:before, #logo .h:after {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .logo {
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    border-left: 40px solid #FBBC05;
+    border-right: 40px solid #4385F6;
+    border-top: 40px solid #EC4336;
+    border-bottom: 40px solid #34A856;
+  }
+  
+  .logo:before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    border-top: 110px solid transparent;
+    border-right: 110px solid #fff;
+    border-bottom: 110px solid transparent;
+    border-left: 100px solid transparent;
+    transform: rotate(90deg);
+  }
+  
+  .logo:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    width: 110px;
+    height: 40px;
+    background: #4385F6;
+    transform: translate(-5px, -20px);
+    border-bottom-right-radius: 15px;
+  }
+  
+  .card {
+    background-color: #efefef;
+    height: 100px;
+    width: 140px;
+    border-radius: 20px;
+    margin-top:20px;
+    background-image: linear-gradient(90deg, #d5493c 17%, transparent 17%),
+      linear-gradient(90deg, transparent 83%, #d5493c 83%),
+      linear-gradient(145deg, #e3e3e390 60%, transparent 50%),
+      linear-gradient(-134deg, #e8e8e8 60%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+  }
+  .mdn{
+    position: relative;
+    width: 21rem;
+    height: 26rem;
+    margin: 20% auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid 1rem black;
+    border-radius: 3rem;
+    background-color: black;
+  }
+  
+  .bottom{
+    position: absolute;
+    left:0;
+  }
+  .content-white{
+    font-weight:600;
+    color:crimson;
+    font-size:18px;
+    letter-spacing: 0.05rem;
+  }
+  .logo-container {
+    width: 80px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .square {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top:50px;
+  }
+  .widthset {
+    width: 1
+    6.5%;
+  }
+  .bottom h1 {
+    display: flex;
+    position: relative;
+    padding: 0 0.0625em;
+    transform-style: preserve-3d;
+    font: 900 10vw chilanka, segoe script, purisa, comic sans ms, cursive;
+  }
+  
+  .bottom h1::after {
+    position: absolute;
+    top: calc(50% - .5*0.125em);
+    right: 0;
+    width: calc(50% + 50vw);
+    height: 0.125em;
+    border-radius: 0 0.125em 0.125em 0;
+    background: crimson;
+    animation: slide 2s ease-out;
+    content: "";
+    font-size:20px;
+  }
+  .bottom h2{
+    position: absolute;
+   color:#ffff;
+   top:-10px;
+   left:50px;;
+   width:400px;
+   font-weight:bold;
+   letter-spacing: 5px;
+  
+  }
+  .bottom{
+    display:flex;
+    justify-content: center;
+    
+  }
+  .circle{
+    width:40px;
+    height:40px;
+    background: linear-gradient(to bottom left, #f9b446 15%, rgba(234, 47, 152, 0.8));
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  .circle h3{
+    line-height:40px;
+    margin:0 12px;
+    font-size:22px;
+    color:#fff
+  }
+  .bottom h2:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke: 2px crimson
+  }
+  .bottom h2:nth-child(2){
+    color:crimson;
+    animation: animate 4s ease-in-out infinite;
+  }
+  @keyframes animate {
+    0%, 100%{
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
+    }
+    50%{
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 85%, 100% 46%, 100% 100%, 0% 100% );
+    }
+  }
+  @keyframes slide {
+    0% {
+      transform: translate(-100%);
+    }
+  }
+  .letter {
+    overflow: visible;
+    white-space: pre;
+    transform: rotatey(2deg) scalex(1.00061);
+  }
+  
+  .rev {
+    transform: rotatey(-2deg) scalex(1.00061);
+  }
+  
+  .heading-style {
+    font-family: "Righteous", cursive;
+    font-size: 205px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px rgba(6, 188, 209, 0.2);
+    background: #ffffff;
+    mix-blend-mode: screen;
+    padding-top: 190px;
+  }
+  .text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+  }
+  .text:nth-child(5n+1) {
+    stroke: #F2385A;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+  }
+  .text:nth-child(5n+2) {
+    stroke: #F5A503;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+  }
+  .text:nth-child(5n+3) {
+    stroke: #E9F1DF;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+  }
+  .text:nth-child(5n+4) {
+    stroke: #56D9CD;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+  }
+  .text:nth-child(5n+5) {
+    stroke: #3AA1BF;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+  }
+  
+  @-webkit-keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+  }
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+  }
+  /* Other styles */
+  
+  
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+   
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  .shadow {
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+  }
+  .card {
+    border: 0;
+  }
+  .mt-15 {
+    margin-top: 15%;
+  }
+  .progress-wrapper {
+    height: 240px;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    margin-bottom: 0.75rem;
+  }
+  
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .wave::before,
+  .wave::after {
+    content: "";
+    position: absolute;
+    width: 470px;
+    height: 390px;
+    bottom: 0;
+    left: 55%;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 70%;
+    -webkit-transform: translateX(-50%) rotate(0);
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+    z-index: 10;
+  }
+  
+  .wave::after {
+    border-radius: 30%;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: translateX(-50%) rotate(0);
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 10s linear -5s infinite;
+    animation: rotate 10s linear -5s infinite;
+    z-index: 20;
+  }
+  
+  @keyframes rotate {
+    50% {
+      transform: translateX(-50%) rotate(180deg);
+    }
+  
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .heading-style {
+      font-family: "Righteous", cursive;
+      font-size: 156px;
+    }
+  
+    .progress-wrapper {
+      height: 209px;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .heading-style {
+      font-family: "Righteous", cursive;
+      font-size: 65px;
+    }
+  
+    .progress-wrapper {
+      height: 148px;
+    }
+  
+    .wave::before,
+    .wave::after {
+      width: 490px;
+      height: 331px;
+    }
+  }
+  
+  .face-top {
+    transform: rotate(-45deg) skew(15deg, 15deg);
+  }
+  
+  .side {
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    transform-origin: bottom left;
+  }
+  
+  .side-2 {
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    transform-origin: top left;
+  }
+  
+  .square-one {
+    background: #dd1d35;
+    z-index: 5;
+    top: 104px;
+    -webkit-animation: ascend-1 1s 0.5s 1 forwards;
+            animation: ascend-1 1s 0.5s 1 forwards;
+  }
+  
+  .square-two {
+    background: #e44a5d;
+    top: 104px;
+    z-index: 4;
+    -webkit-animation: ascend-2 0.8s 0.5s 1 forwards;
+            animation: ascend-2 0.8s 0.5s 1 forwards;
+  }
+  
+  .square-three {
+    background: #a61628;
+    top: 104px;
+  }
+  
+  .square-four {
+    background: #dd1d35;
+    top: 104px;
+    left: 44px;
+    -webkit-animation: morph-1 0.6s 0.6s 1 forwards ease-in-out;
+            animation: morph-1 0.6s 0.6s 1 forwards ease-in-out;
+  }
+  
+  .square-five {
+    background: #a61628;
+    top: 25px;
+    left: 0px;
+    opacity: 0;
+    -webkit-animation: morph-2 0.6s 1.1s 1 forwards ease-in-out;
+            animation: morph-2 0.6s 1.1s 1 forwards ease-in-out;
+  }
+  
+  @-webkit-keyframes ascend-1 {
+    0% {
+      top: 104px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  
+  @keyframes ascend-1 {
+    0% {
+      top: 104px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @-webkit-keyframes ascend-2 {
+    0% {
+      top: 104px;
+    }
+    100% {
+      top: 52px;
+    }
+  }
+  @keyframes ascend-2 {
+    0% {
+      top: 104px;
+    }
+    100% {
+      top: 52px;
+    }
+  }
+  @-webkit-keyframes morph-1 {
+    0% {
+      transform: rotate(-45deg) skew(15deg, 15deg);
+    }
+    100% {
+      transform: rotate(-45deg) skew(-45deg, 15deg);
+      height: 37px;
+      top: 118px;
+    }
+  }
+  @keyframes morph-1 {
+    0% {
+      transform: rotate(-45deg) skew(15deg, 15deg);
+    }
+    100% {
+      transform: rotate(-45deg) skew(-45deg, 15deg);
+      height: 37px;
+      top: 118px;
+    }
+  }
+  @-webkit-keyframes morph-2 {
+    0% {
+      transform: rotate(-45deg) skew(15deg, 15deg);
+      opacity: 0;
+    }
+    98% {
+      opacity: 1;
+    }
+    100% {
+      top: 26px;
+      left: 1px;
+      transform: rotate(-15deg) skew(-15deg, -15deg);
+      opacity: 1;
+    }
+  }
+  @keyframes morph-2 {
+    0% {
+      transform: rotate(-45deg) skew(15deg, 15deg);
+      opacity: 0;
+    }
+    98% {
+      opacity: 1;
+    }
+    100% {
+      top: 26px;
+      left: 1px;
+      transform: rotate(-15deg) skew(-15deg, -15deg);
+      opacity: 1;
+    }
+  }
+  .mdn::before{
+    content:'';
+    position: absolute;
+    width: 19rem;
+    height: 14rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    
+    background: linear-gradient(128deg, transparent 51%, black 53%, black 70%, transparent 72%) no-repeat bottom left,
+      linear-gradient(108deg, transparent 38%, black 40%, black 63%, transparent 65%) no-repeat bottom left 6.3rem,
+      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat bottom right 4.8rem,
+      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 2.1rem left 5.7rem,
+      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 1.2rem left 8.9rem,
+      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 4.9rem top 6.9rem,
+      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 5.7rem top 4.3rem,
+      -webkit-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 8.4rem top 2.4rem,
+      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 66%) no-repeat bottom 2.8rem left 2.7rem,
+      linear-gradient(112deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat top 4rem left 2.8rem,
+      linear-gradient(150deg, transparent 47%, black 48%, black 66%, transparent 68%) no-repeat top 1.1rem left 3.5rem,
+      linear-gradient(151deg, transparent 55%, black 56%, black 88%, transparent 90%) no-repeat top 2.5rem left 1rem,
+      linear-gradient(150deg, transparent 57%, black 58%, black 88%, transparent 90%) no-repeat top 4.5rem left .8rem,
+      linear-gradient(150deg, transparent 60%, black 63%, black 100%) no-repeat bottom 4.5rem left .8rem,
+      linear-gradient(150deg, transparent 50%, black 53%, black 100%) no-repeat bottom 2.8rem left 1.8rem,
+      linear-gradient(15deg, transparent 16%, black 20%, black 62%, transparent 65%) no-repeat top 1rem left 8.5rem,
+      linear-gradient(162deg, transparent 30%, black 32%, black 70%, transparent 66%) no-repeat top 1.6rem right 6.2rem ,
+      linear-gradient(45deg, transparent 31%, black 32%, black 52%, transparent 53%) no-repeat top 1.6rem right 3.5rem,
+       linear-gradient(20deg, transparent 30%, black 31%, black 52%, transparent 54%) no-repeat top 2.8rem right 1.6rem ,
+      linear-gradient(45deg, transparent 27%, black 29%, black 51%, transparent 52%) no-repeat top 3.8rem right .5rem,
+      linear-gradient(90deg, transparent 38%, black 38%, black 60%) no-repeat top 6rem right .5rem,
+      linear-gradient(45deg, transparent 35%, black 35%, black 70%) no-repeat top 4.8rem right 1.6rem,
+      linear-gradient(108deg, black 40%, transparent 40%) no-repeat bottom 4.4rem right .1rem,
+      linear-gradient(150deg, transparent 23%, black 25%, black 55%, transparent 57%) no-repeat bottom 3rem right 1rem,
+      linear-gradient(15deg, transparent 40%, black 41%, black 60%, transparent 62%) no-repeat bottom 2.8rem right 3.5rem,
+      linear-gradient(110deg, transparent 45%, black 45%, black 65%, transparent 65%) no-repeat top 3.6rem right 5.8rem,
+      -webkit-radial-gradient(center center, ellipse contain, white 28%, transparent 30%)no-repeat right 4.9rem top 3.5rem,
+      linear-gradient(40deg, transparent 52%, #F30021 52%, #F30021 75%, transparent 75%) no-repeat top 3.2rem right 5rem,
+      linear-gradient(38deg, transparent 30%, #F30021 30%, #F30021 52%, transparent 52%) no-repeat top 3.8rem right 6rem,
+      linear-gradient(162deg, transparent 30%, black 30%, black 70%, transparent 65%) no-repeat top 3.3rem right 5.6rem,
+      linear-gradient(162deg, transparent 10%, black 25%, black 55%, transparent 55%) no-repeat top 4rem right 5rem,
+      linear-gradient(15deg, transparent 40%, black 42%, black 59%, transparent 61%) no-repeat top 6rem right 1rem,
+      linear-gradient(15deg, transparent 43%, black 45%, black 59%, transparent 59%) no-repeat top 7.5rem right 1rem,
+      
+      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 4rem right 7.8rem,
+      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 5.1rem right 8.3rem,
+      -webkit-radial-gradient(center center, circle contain, #F30021 0%, #F30021 33%, black 33%, black 50%, transparent 50%)no-repeat right 6.5rem top 3.2rem,
+      -webkit-radial-gradient(center center, circle contain, #F30021 50%, transparent 52%)no-repeat right 5.6rem top 2.5rem,
+      -webkit-radial-gradient(center center, circle contain, black 52%, transparent 53%)no-repeat right 4.6rem top 1.5rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 6.9rem right 5.1rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.1rem right 4.3rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.3rem right 3.5rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.5rem right 2.6rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.7rem right 1.8rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.7rem right .8rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.5rem right 1.6rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.3rem right 2.5rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.1rem right 3.3rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 6.8rem right 4.1rem,
+      linear-gradient(15deg, transparent 45%, black 45%, black 70%, transparent 59%) no-repeat top 6.5rem right 1.1rem,
+      linear-gradient(45deg, gold 30%, black 35%, black 50%, transparent 55%) no-repeat top 4.7rem right 6.2rem; 
+    
+    /*FF*/
+    
+    background: linear-gradient(128deg, transparent 51%, black 53%, black 70%, transparent 72%) no-repeat bottom left,
+      linear-gradient(108deg, transparent 38%, black 40%, black 63%, transparent 65%) no-repeat bottom left 6.3rem,
+      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat bottom right 4.8rem,
+      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 2.1rem left 5.7rem,
+      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat bottom 1.2rem left 8.9rem,
+      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 4.9rem top 6.9rem,
+      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 5.7rem top 4.3rem,
+      -moz-radial-gradient(center center, circle contain, black 60%, transparent 60%)no-repeat left 8.4rem top 2.4rem,
+      linear-gradient(73deg, transparent 36%, black 38%, black 63%, transparent 66%) no-repeat bottom 2.8rem left 2.7rem,
+      linear-gradient(112deg, transparent 36%, black 38%, black 63%, transparent 65%) no-repeat top 4rem left 2.8rem,
+      linear-gradient(150deg, transparent 47%, black 48%, black 66%, transparent 68%) no-repeat top 1.1rem left 3.5rem,
+      linear-gradient(151deg, transparent 55%, black 56%, black 88%, transparent 90%) no-repeat top 2.5rem left 1rem,
+      linear-gradient(150deg, transparent 57%, black 58%, black 88%, transparent 90%) no-repeat top 4.5rem left .8rem,
+      linear-gradient(150deg, transparent 60%, black 63%, black 100%) no-repeat bottom 4.5rem left .8rem,
+      linear-gradient(150deg, transparent 50%, black 53%, black 100%) no-repeat bottom 2.8rem left 1.8rem,
+      linear-gradient(15deg, transparent 16%, black 20%, black 62%, transparent 65%) no-repeat top 1rem left 8.5rem,
+      linear-gradient(162deg, transparent 30%, black 32%, black 70%, transparent 66%) no-repeat top 1.6rem right 6.2rem,
+      linear-gradient(45deg, transparent 31%, black 32%, black 52%, transparent 53%) no-repeat top 1.6rem right 3.5rem,
+       linear-gradient(20deg, transparent 30%, black 31%, black 52%, transparent 54%) no-repeat top 2.8rem right 1.6rem,
+      linear-gradient(45deg, transparent 27%, black 29%, black 51%, transparent 52%) no-repeat top 3.8rem right .5rem,
+      linear-gradient(90deg, transparent 38%, black 38%, black 60%) no-repeat top 6rem right .5rem,
+      linear-gradient(45deg, transparent 35%, black 35%, black 70%) no-repeat top 4.8rem right 1.6rem,
+      linear-gradient(108deg, black 40%, transparent 40%) no-repeat bottom 4.4rem right .1rem,
+      linear-gradient(150deg, transparent 23%, black 25%, black 55%, transparent 57%) no-repeat bottom 3rem right 1rem,
+      linear-gradient(15deg, transparent 40%, black 41%, black 60%, transparent 62%) no-repeat bottom 2.8rem right 3.5rem,
+      linear-gradient(110deg, transparent 45%, black 45%, black 65%, transparent 65%) no-repeat top 3.6rem right 5.8rem,
+      -moz-radial-gradient(center center, ellipse contain, white 28%, transparent 30%)no-repeat right 4.9rem top 3.5rem,
+      linear-gradient(40deg, transparent 52%, #F30021 52%, #F30021 75%, transparent 75%) no-repeat top 3.2rem right 5rem,
+      linear-gradient(38deg, transparent 30%, #F30021 30%, #F30021 52%, transparent 52%) no-repeat top 3.8rem right 6rem,
+      linear-gradient(162deg, transparent 30%, black 30%, black 70%, transparent 65%) no-repeat top 3.3rem right 5.6rem,
+      linear-gradient(162deg, transparent 10%, black 25%, black 55%, transparent 55%) no-repeat top 4rem right 5rem,
+      linear-gradient(15deg, transparent 40%, black 42%, black 59%, transparent 61%) no-repeat top 6rem right 1rem,
+      linear-gradient(15deg, transparent 43%, black 45%, black 59%, transparent 59%) no-repeat top 7.5rem right 1rem,
+      
+      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 4rem right 7.8rem,
+      linear-gradient(15deg, transparent 30%, #F30021 30%, #F30021 68%, transparent 68%) no-repeat top 5.1rem right 8.3rem,
+      -moz-radial-gradient(center center, circle contain, #F30021 0%, #F30021 33%, black 33%, black 50%, transparent 50%)no-repeat right 6.5rem top 3.2rem,
+      -moz-radial-gradient(center center, circle contain, #F30021 50%, transparent 52%)no-repeat right 5.6rem top 2.5rem,
+      -moz-radial-gradient(center center, circle contain, black 52%, transparent 53%)no-repeat right 4.6rem top 1.5rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 6.9rem right 5.1rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.1rem right 4.3rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.3rem right 3.5rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.5rem right 2.6rem,
+      linear-gradient(80deg, transparent 84%, white 84%, white 55%) no-repeat top 7.7rem right 1.8rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.7rem right .8rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.5rem right 1.6rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.3rem right 2.5rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 7.1rem right 3.3rem,
+      linear-gradient(120deg, white 40%, white 40%, transparent 40%) no-repeat top 6.8rem right 4.1rem,
+      linear-gradient(15deg, transparent 45%, black 45%, black 70%, transparent 59%) no-repeat top 6.5rem right 1.1rem,
+      linear-gradient(45deg, gold 30%, black 35%, black 50%, transparent 55%) no-repeat top 4.7rem right 6.2rem; 
+    background-size: 
+      5.5rem 2.8rem
+      ,3rem 5.5rem
+      ,3rem 4rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,3rem 4rem
+      ,3rem 3.3rem
+      ,5rem 3.3rem
+      ,4rem 3rem
+      ,3.5rem 3rem
+      ,3rem 3rem
+      ,3rem 2rem
+      ,3rem 1.8rem
+      ,2.5rem 1.7rem
+      ,2.8rem 2.8rem
+      ,2.8rem 2.8rem
+      ,1.1rem 2.8rem
+      ,1rem 2rem
+      ,.5rem 2rem
+      ,1rem 1.6rem
+      ,2.5rem 1.7rem
+      ,6.5rem 3rem
+      ,1rem 1rem
+      ,2.8rem 1.3rem
+      ,1.5rem 1.3rem 
+      ,2rem 1.3rem 
+      ,2rem 1.3rem
+      ,2rem 1.3rem
+      ,6rem 2rem
+      ,6.9rem 2rem
+      
+      ,2.3rem 3rem
+      ,2.3rem 1rem
+      ,5.5rem 6rem
+      ,7.5rem 7.5rem
+      ,9.5rem 10rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,1rem 1rem
+      ,7rem 3.2rem
+      ,1.1rem 2rem;
+    
+    background-color: #F30021;
+  }
+  
+  .mdn::after{
+    content:'MDN';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 19rem;
+    font-family: 'Maven Pro';
+    font-size: 8rem;
+    color: #FFF;
+    text-align: center;
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -78%;
+    left: -15%;
+    box-shadow: 1px 1px 5px #000;
+    background-color: #f2f2f2;
+    border-right: 30px solid #d5493c;
+    border-bottom: 30px solid #d5493c;
+    transform: rotate(51deg) skewY(-12deg);
+  }
+  
+  .netflix-stick {
+    width: 4vh;
+    height:15vh;
+    background-color: #b1060f;
+    position: absolute;
+    left:0;
+    top:30px;
+  }
+  
+  .netflix-stick:before {
+    content: "";
+    position: absolute;
+    width: 4vh;
+    height: 15vh;
+    background-color: #e50913;
+    transform: skew(20deg);
+    left: 2.5vh;
+    box-shadow: 0 0 2.5vh -1vh black;
+  }
+  
+  .netflix-stick:after {
+    content: "";
+    position: absolute;
+    width: 7vh;
+    height: 30vh;
+    background-color: #b1060f;
+    left: 11vh;
+    z-index: -1;
+  }
+  
+  .thing {
+    width: 7.5vh;
+    height: 2vh;
+    position: absolute;
+   
+    bottom: -1vh;
+    transform: rotateZ(-5deg);
+  }
+  
+  .thing:before {
+    content: "";
+    width: 7.8vh;
+    height: 2vh;
+    position: absolute;
+    
+    bottom: -1vh;
+    transform: rotateZ(12deg);
+    left: 10.2vh;
+  }
+  #logo .d {
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -0px;
+    height: 40px;
+    width: 40px;
+    -moz-border-radius: 20px 60px 60px 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px 60px 60px 20px;
+  }
+  #logo .h {
+    right: 50%;
+    margin-right: -110px;
+    margin-top: 15px;
+    height: 150px;
+    width: 80px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+  }
+ .gitlab {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .gitlab:before {
+    position: absolute;
+    content: "";
+    font-size: 2em;
+    color: #8c929d;
+    text-align: center;
+    top: 390px;
+    margin-left: 80px;
+    font-family: "Roboto", sans-serif;
+  }
+.gitlab .triangel_left {
+    width: 0;
+    height: 0;
+    left: 35px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid #e2432b;
+    position: relative;
+  }
+  .gitlab .triangel_left:before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    top: 80px;
+    left: 30px;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 55px solid transparent;
+    border-top: 168px solid #e2432b;
+  }
+ .gitlab .triangel_right {
+    width: 0;
+    height: 0;
+    top: -170px;
+    margin-left: -85px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid #e2432b;
+  }
+ .gitlab .triangel_center {
+    width: 0;
+    height: 0;
+    margin-top: 130px;
+    margin-left: -45px;
+    border-left: 120px solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 120px solid #efa221;
+    position: relative;
+  }
+ .gitlab .triangel_center:before {
+    position: absolute;
+    content: "";
+    top: -170px;
+    left: -120px;
+    height: 0;
+    width: 215px;
+    border-bottom: 50px solid #efa221;
+    border-left: 20px solid transparent;
+    border-right: 25px solid transparent;
+  }
+  .gitlab .triangel_center:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -170px;
+    margin-left: -100px;
+    border-left: 100px solid transparent;
+    border-right: 116px solid transparent;
+    border-top: 170px solid #e96b28;
+    opacity: 0.5;
+  }
+  #logo .h:before, #logo .h:after {
+    margin-top: -60px;
+    width: 30px;
+    height: 120px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    content: "";
+  }
+  #logo .h:before {
+    left: 0;
+  }
+  #logo .h:after {
+    right: 0;
+  }
+  
+  @keyframes left-circle {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      left: 100%;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1;
+      left: 0;
+    }
+  }
+  @keyframes right-circle {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      right: 100%;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1;
+      right: 0;
+    }
+  }
+  @keyframes letters {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+    50% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1;
+    }
+  }
+  #logo .c1, #logo .c2 {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+  #logo .c1 {
+    animation-name: left-circle;
+  }
+  #logo .c2 {
+    animation-name: right-circle;
+  }
+  #logo .d, #logo .h {
+    animation-name: letters;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+  
 #header{
     position:absolute;
     display : block;
@@ -34,6 +1163,10 @@ html {
     display: flex;
     justify-content: space-between;
    
+}
+.title_cv{
+  line-height:10px;
+  font-size:25px;
 }
 .header__navbar{
   height:65px;
