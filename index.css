@@ -3381,7 +3381,7 @@ text-align: left;}
   padding:10px 15px;
   background-color:rgba(0, 0, 0, 0.25); ;
 }
-@media only screen and (min-width: 767px) and (max-width:1025px) {
+@media only screen and (min-width: 767px) and (max-width:1024px) {
   .carousel_between_template{
     display:flex;
   }
