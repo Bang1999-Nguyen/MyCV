@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- main css -->
+  <!-- SLICK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./index.css">
@@ -652,6 +655,33 @@
           </div>
         </div>
       </div>
+      <div class="portfolio_res">
+          <div class="item_res">
+              <div class="res_over">
+                
+                <div class="res">
+                  <h1>Cinema Booking System</h1>
+                  <h4>September 2021 - October 20221</h4>
+                  <p>Description:<span>A website is made for providing the customers an anytime and anywhere
+                    service for booking cinema tickets and providing information about the movies.</span>
+                </p>
+                <p>Responsibility:<span>Development</span></p>
+                <p>Technology:<span>React.js, Redux, Tailwind Css, Ant Design.</span></p>
+                <span class="connect"><a href="https://github.com/Bang1999-Nguyen/Cinema_NguyenThiTuyetBang_BC12.git">Link
+                    Github</a><a
+                    href="http://cybermovietb.surge.sh/?fbclid=IwAR3DcXcXJXpGRPg__Wmmz0c2r_7zIXYTlzOAdBc00yz8ch9Gh94WIUTQmOI">Link
+                    Demo</a></span>
+                </div>
+              </div>
+             
+          </div>
+          <div class="item_res">
+
+          </div>
+          <div class="item_res">
+
+          </div>
+      </div>
     </div>
   </section>
   <!-- END PORTFOLIO -->
@@ -752,6 +782,20 @@
       }, 3500);
     })
     // document.querySelector('.content_about').style.setProperty('--animate-duration', '7s');
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
+  <script>
+      $('.portfolio_res').slick({
+infinite: true,
+slidesToShow: 1,
+slidesToScroll: 1,
+dots:true, 
+arrows:false,
+//   autoplay: true,
+// 1000ms = 1s
+autoplaySpeed: 1000,
+  });
 
   </script>
   <script type="text/javascript">
