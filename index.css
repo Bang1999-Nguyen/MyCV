@@ -3331,40 +3331,6 @@ text-align: left;}
   transform: translate(-50%, -50%);
   color:white
 }
-/* backtotop */
-/* .backtotop{
-  height:60px;
-  width:60px;
-  color:white;
-  background-color:rgba(0, 0, 0, 0.25);
-  border-radius:4px;
-  line-height:60px;
-  text-align:center;
-  display: block;
-  font-size:20px;
-  position: absolute;
-  right:20px;
-  top:20px;
-  visibility: hidden;
-  opacity: 0;
-} */
-/* .backtotop{
-  height:60px;
-  width:60px;
-  color:white;
-  background-color:rgba(0, 0, 0, 0.25);
-  border-radius:4px;
-  line-height:60px;
-  text-align:center;
-  display: block;
-  font-size:20px;
-  position:fixed;
-  right:20px;
-  top:500px;
-  visibility: hidden;
-  opacity: 1;
-  z-index:100000000!important
-} */
 
 
 .backtotop{
@@ -3381,14 +3347,13 @@ text-align: left;}
   padding:10px 15px;
   background-color:rgba(0, 0, 0, 0.25); ;
 }
-@media only screen and (min-width: 767px) and (max-width:1024px) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
   .carousel_between_template{
     display:flex;
   }
   #carousel{
     height:950px;
     max-height:950px;
-    /* background-image: url('./img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg'); */
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3478,7 +3443,6 @@ text-align: left;}
             height:300px;
             animation-delay: 5s;
   }
- 
   .content_about{
     display: flex;
     
@@ -3872,8 +3836,6 @@ left:0;
     margin:0 -80px;
     height:950px;
     position:relative;
-    
-  
   }
   
 }
