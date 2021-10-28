@@ -4010,7 +4010,12 @@ left:0;
   background-color:#fff;
   
 }
-
+.portfolio_res{
+  display:block!important
+}
+.portfolio_content{
+  display:none!important
+}
 .skill_overlay{
   position:absolute;
   bottom:0;
@@ -4143,4 +4148,10 @@ grid-auto-rows: minmax(200px, auto);
 
 .resume__res{
   display:none
+}
+.portfolio_res{
+  display:none
+}
+.portfolio_content{
+  display:block
 }
