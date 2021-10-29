@@ -15,8 +15,12 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- main css -->
   <!-- SLICK -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" />
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./index.css">
@@ -69,7 +73,8 @@
               <h2 data-text="ANG...">ANG...</h2>
             </div>
           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="collapse navbar-collapse" id="navbarCV">
             <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll navbar" style="max-height: 100px;"
               onclick="lang1(event);">
               <li class="nav-item active">
@@ -94,6 +99,24 @@
           </div>
         </div>
       </nav>
+      <div class="res_nav">
+        <nav class="menu-res">
+          <input type="checkbox" href="#" class="menu-open-res" name="menu-open-res" id="menu-open-res" />
+          <label class="menu-open-button-res" for="menu-open-res">
+            <span class="hamburger-res hamburger-one"></span>
+            <span class="hamburger-res hamburger-two"></span>
+            <span class="hamburger-res hamburger-three"></span>
+          </label>
+          <div class="res_div">
+          <a class="nav-link-item" href="#">Home </a>
+          <a class="nav-link-item" href="#about">About</a>
+          <a class="nav-link-item" href="#resume">Resume</a>
+          <a class="nav-link-item" href="#skill">Skills</a>
+          <a class="nav-link-item" href="#portfolio">Portfolio</a>
+          <a class="nav-link-item" href="#footer">Contact</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- END HEADER -->
     <!-- CAROUSEL -->
@@ -348,32 +371,32 @@
     </div>
     <div class="resume__res">
       <div class="resume_title_res">
-          <div class="education_res" >
-            <div class="container"  data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-              <div class="images">
-                <img src="https://www.pngarts.com/files/7/Online-Education-Transparent-Image.png" />
-              </div>
-              <div class="slideshow-buttons">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-                <div class="four"></div>
-              </div>
-              <p class="pick">Here is my...</p>
-              <div class="sizes">
-                <div class="size">E</div>
-                <div class="size">D</div>
-                <div class="size">U</div>
-                <div class="size">C</div>
-                <div class="size">A</div>
-                <div class="size">T</div>
-                <div class="size">I</div>
-                <div class="size">0</div>
-                <div class="size">N</div>
-              </div>
-              <div class="product">
-                
-                <div class="university">
+        <div class="education_res">
+          <div class="container" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+            <div class="images">
+              <img src="https://www.pngarts.com/files/7/Online-Education-Transparent-Image.png" />
+            </div>
+            <div class="slideshow-buttons">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+            </div>
+            <p class="pick">Here is my...</p>
+            <div class="sizes">
+              <div class="size">E</div>
+              <div class="size">D</div>
+              <div class="size">U</div>
+              <div class="size">C</div>
+              <div class="size">A</div>
+              <div class="size">T</div>
+              <div class="size">I</div>
+              <div class="size">0</div>
+              <div class="size">N</div>
+            </div>
+            <div class="product">
+
+              <div class="university">
                 <h1>University of Economics and Law - VietNam National University, Ho Chi Minh City</h1>
                 <h2>Specialized in Economics and Public Management / GPA: 8.3</h2>
               </div>
@@ -381,67 +404,67 @@
                 <h1 class="desc">Cybersoft - Cyberlearn Programing Education Center</h1>
                 <p>Front-end Foundation course:</span> knowledge of HTML5, CSS3, Boostrap 4, SASS/SCSS,
                   Javascript (ES5/ES6), Git, React.js, Angular...</p>
-                </div>
-                <div class="buttons">
-                  <button class="add">MY EDUCATION</button>
-                  <button class="like"><span>♥</span></button>
-                </div>
+              </div>
+              <div class="buttons">
+                <button class="add">MY EDUCATION</button>
+                <button class="like"><span>♥</span></button>
               </div>
             </div>
-            
-            <footer>
-              <p>EDUCATION</p> 
-            </footer>
           </div>
-          <div class="experience_res">
-            <div class="container"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-              <div class="images">
-                <img src="https://maxcdn.icons8.com/app/uploads/2019/10/teamwork-illustration-2-1024x768.png" />
-              </div>
-              <div class="slideshow-buttons">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-                <div class="four"></div>
-              </div>
-              <p class="pick">Here is my...</p>
-              <div class="sizes">
-                <div class="size">E</div>
-                <div class="size">X</div>
-                <div class="size">P</div>
-                <div class="size">E</div>
-                <div class="size">R</div>
-                <div class="size">I</div>
-                <div class="size">E</div>
-                <div class="size">N</div>
-                <div class="size">C</div>
-                <div class="size">E</div>
-              </div>
-              <div class="product">
-                
-                <div class="center_ex">
+
+          <footer>
+            <p>EDUCATION</p>
+          </footer>
+        </div>
+        <div class="experience_res">
+          <div class="container" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+            <div class="images">
+              <img src="https://maxcdn.icons8.com/app/uploads/2019/10/teamwork-illustration-2-1024x768.png" />
+            </div>
+            <div class="slideshow-buttons">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+            </div>
+            <p class="pick">Here is my...</p>
+            <div class="sizes">
+              <div class="size">E</div>
+              <div class="size">X</div>
+              <div class="size">P</div>
+              <div class="size">E</div>
+              <div class="size">R</div>
+              <div class="size">I</div>
+              <div class="size">E</div>
+              <div class="size">N</div>
+              <div class="size">C</div>
+              <div class="size">E</div>
+            </div>
+            <div class="product">
+
+              <div class="center_ex">
                 <h1>Personal Projects</h1>
                 <h2>Have 6 months of experience with Front-end projects at Cybersoft - Cyberlearn Programing Education
                   Center. </h2>
-                  <h2>Have Experience of web UI framework like Ant Design, Bootstrap, Tailwind CSS...</h2>
+                <h2>Have Experience of web UI framework like Ant Design, Bootstrap, Tailwind CSS...</h2>
               </div>
               <div class="center">
                 <h1>Personal Projects</h1>
-                <h2>Working on my own projects with modern JS frameworks and libraries such as React, Angular. 
-                 Experience with popular React.js workflows (such as Redux).</h2>
-                </div>
-                <div class="buttons">
-                  <button class="add">MY EXPERIENCE</button>
-                  <button class="like"><span>♥</span></button>
-                </div>
+                <h2>Working on my own projects with modern JS frameworks and libraries such as React, Angular.
+                  Experience with popular React.js workflows (such as Redux).</h2>
+              </div>
+              <div class="buttons">
+                <button class="add">MY EXPERIENCE</button>
+                <button class="like"><span>♥</span></button>
               </div>
             </div>
-            <footer>
-              <p>EXPERIENCE</p> 
-            </footer>
-            </div>
           </div>
+          <footer>
+            <p>EXPERIENCE</p>
+          </footer>
+        </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- END RESUME -->
@@ -656,31 +679,31 @@
         </div>
       </div>
       <div class="portfolio_res">
-          <div class="item_res">
-              <div class="res_over">
-                
-                <div class="res">
-                  <h1>Cinema Booking System</h1>
-                  <h4>September 2021 - October 20221</h4>
-                  <p>Description:<span>A website is made for providing the customers an anytime and anywhere
-                    service for booking cinema tickets and providing information about the movies.</span>
-                </p>
-                <p>Responsibility:<span>Development</span></p>
-                <p>Technology:<span>React.js, Redux, Tailwind Css, Ant Design.</span></p>
-                <span class="connect"><a href="https://github.com/Bang1999-Nguyen/Cinema_NguyenThiTuyetBang_BC12.git">Link
-                    Github</a><a
-                    href="http://cybermovietb.surge.sh/?fbclid=IwAR3DcXcXJXpGRPg__Wmmz0c2r_7zIXYTlzOAdBc00yz8ch9Gh94WIUTQmOI">Link
-                    Demo</a></span>
-                </div>
-              </div>
-             
-          </div>
-          <div class="item_res">
+        <div class="item_res">
+          <div class="res_over">
 
+            <div class="res">
+              <h1>Cinema Booking System</h1>
+              <h4>September 2021 - October 20221</h4>
+              <p>Description:<span>A website is made for providing the customers an anytime and anywhere
+                  service for booking cinema tickets and providing information about the movies.</span>
+              </p>
+              <p>Responsibility:<span>Development</span></p>
+              <p>Technology:<span>React.js, Redux, Tailwind Css, Ant Design.</span></p>
+              <span class="connect"><a href="https://github.com/Bang1999-Nguyen/Cinema_NguyenThiTuyetBang_BC12.git">Link
+                  Github</a><a
+                  href="http://cybermovietb.surge.sh/?fbclid=IwAR3DcXcXJXpGRPg__Wmmz0c2r_7zIXYTlzOAdBc00yz8ch9Gh94WIUTQmOI">Link
+                  Demo</a></span>
+            </div>
           </div>
-          <div class="item_res">
 
-          </div>
+        </div>
+        <div class="item_res">
+
+        </div>
+        <div class="item_res">
+
+        </div>
       </div>
     </div>
   </section>
@@ -781,21 +804,38 @@
         window.scrollTo(0, 0)
       }, 3500);
     })
+    toggle_open_text = "Menu";
+    toggle_close_text = "Close";
+    var toggle = document.querySelector('.toggle')
+    var nav = document.querySelector('.top-right')
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle("open");
+      if (nav.classList.contains("open")) {
+        toggle.innerHTML = toggle_close_text;
+      } else {
+        toggle.innerHTML = toggle_open_text;
+      }
+
+    })
+
+
     // document.querySelector('.content_about').style.setProperty('--animate-duration', '7s');
 
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous"></script>
   <script>
-      $('.portfolio_res').slick({
-infinite: true,
-slidesToShow: 1,
-slidesToScroll: 1,
-dots:true, 
-arrows:false,
-//   autoplay: true,
-// 1000ms = 1s
-autoplaySpeed: 1000,
-  });
+    $('.portfolio_res').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      //   autoplay: true,
+      // 1000ms = 1s
+      autoplaySpeed: 1000,
+    });
 
   </script>
   <script type="text/javascript">
