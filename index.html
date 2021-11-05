@@ -108,12 +108,12 @@
             <span class="hamburger-res hamburger-three"></span>
           </label>
           <div class="res_div">
-          <a class="nav-link-item" href="#">Home</a>
-          <a class="nav-link-item" href="#about">About</a>
-          <a class="nav-link-item" href="#resume">Resume</a>
-          <a class="nav-link-item" href="#skill">Skills</a>
-          <a class="nav-link-item" href="#portfolio">Portfolio</a>
-          <a class="nav-link-item" href="#footer">Contact</a>
+            <a class="nav-link-item" href="#">Home</a>
+            <a class="nav-link-item" href="#about">About</a>
+            <a class="nav-link-item" href="#resume">Resume</a>
+            <a class="nav-link-item" href="#skill">Skills</a>
+            <a class="nav-link-item" href="#portfolio">Portfolio</a>
+            <a class="nav-link-item" href="#footer">Contact</a>
           </div>
         </nav>
       </div>
@@ -277,9 +277,9 @@
       <h1 class="resume_title">MY <span>RESUME</span></h1>
     </div>
     <div class="resume__body">
-      <div class="grid" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+      <div class="grid" data-aos="fade-up" data-aos-duration="2000" data-aos-once="tue">
         <div class="infor_main">
-          <div class="grid-item grid-item-one">
+          <div class="grid-item grid-item-one onHover" onmouseover="callHoverEvent(this)"  onmouseout="normalImg(this)">
 
             <div class="infor">
               <h3>University of Economics and Law - VietNam National University, Ho Chi Minh City</h3>
@@ -291,7 +291,8 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-two">
+
+        <div class="grid-item grid-item-two ">
           <div class="gird_overlay">
             <div class="container">
               <div class="box">
@@ -309,7 +310,7 @@
           </div>
         </div>
         <div class="infor_main">
-          <div class="grid-item grid-item-three">
+          <div class="grid-item grid-item-three onHover" onmouseover="callHoverEventThree(this)"  onmouseout="normalImg(this)">
             <div class="infor">
               <h3>Cybersoft - Cyberlearn Programing Education Center</h3>
               <h2>April 2021 - October 2021</h2>
@@ -338,7 +339,7 @@
           </div>
         </div>
         <div class="infor_main">
-          <div class="grid-item grid-item-three">
+          <div class="grid-item grid-item-three onHover grid-item-4"  onmouseover="callHoverEventFour(this)"  onmouseout="normalImg(this)">
 
             <div class="infor">
               <h3>Personal Projects</h3>
@@ -353,7 +354,7 @@
           </div>
         </div>
         <div class="infor_main">
-          <div class="grid-item grid-item-three">
+          <div class="grid-item grid-item-three grid-item-three onHover grid-item-5" onmouseover="callHoverEventFive(this)"  onmouseout="normalImg(this)">
 
             <div class="infor">
               <h3>Personal Projects</h3>
@@ -817,9 +818,50 @@
       }
 
     })
+    function callHoverEvent() {
+      var hover = document.querySelectorAll('.onHover');
+      document.querySelector('.grid-item-three').classList.add('activeBlur')
+      document.querySelector('.grid-item-two').classList.add('activeBlur')
+      document.querySelector('.grid-item-one').classList.remove('activeBlur')
+      document.querySelector('.grid-item-4').classList.add('activeBlur')
+      document.querySelector('.grid-item-four').classList.add('activeBlur')
+    }
+    function callHoverEventThree() {
+      var hover = document.querySelectorAll('.onHover');
+      document.querySelector('.grid-item-one').classList.add('activeBlur')
+      document.querySelector('.grid-item-three').classList.remove('activeBlur')
+      document.querySelector('.grid-item-two').classList.add('activeBlur')
+      document.querySelector('.grid-item-4').classList.add('activeBlur')
+      document.querySelector('.grid-item-four').classList.add('activeBlur')
+    }
+    function callHoverEventFour(){
+      document.querySelector('.grid-item-one').classList.add('activeBlur')
+      document.querySelector('.grid-item-three').classList.add('activeBlur')
+      document.querySelector('.grid-item-two').classList.add('activeBlur')
+      document.querySelector('.grid-item-4').classList.add('active')
+      document.querySelector('.grid-item-4').classList.remove('activeBlur')
 
+      document.querySelector('.grid-item-four').classList.add('activeBlur')
 
-    // document.querySelector('.content_about').style.setProperty('--animate-duration', '7s');
+    }
+    function callHoverEventFive(){
+      document.querySelector('.grid-item-one').classList.add('activeBlur')
+      document.querySelector('.grid-item-three').classList.add('activeBlur')
+      document.querySelector('.grid-item-two').classList.add('activeBlur')
+      document.querySelector('.grid-item-5').classList.add('active')
+      document.querySelector('.grid-item-5').classList.remove('activeBlur')
+      document.querySelector('.grid-item-4').classList.add('activeBlur')
+      document.querySelector('.grid-item-four').classList.add('activeBlur')
+
+    }
+    function normalImg() {
+      document.querySelector('.grid-item-one').classList.remove('activeBlur')
+      document.querySelector('.grid-item-three').classList.remove('activeBlur')
+      document.querySelector('.grid-item-two').classList.remove('activeBlur')
+      document.querySelector('.grid-item-4').classList.remove('active')
+      document.querySelector('.grid-item-four').classList.remove('activeBlur')
+}
+
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"

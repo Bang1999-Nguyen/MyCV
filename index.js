@@ -176,3 +176,8 @@ var toggle = document.querySelector('.toggle')
 toggle.addEventListener('click', function(){
   alert('1')
 })
+function hover(){
+  let hover = document.querySelector('.grid-item')
+ console.log(hover);
+ }
+ hover()
