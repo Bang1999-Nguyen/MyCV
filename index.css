@@ -1882,7 +1882,13 @@ button:hover, button:focus {
   .mozart {
     -webkit-animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
             animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
+  }
+  
+  .mozart.active{
+    -webkit-animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation-delay: 6s;
   }
   
 
@@ -1890,26 +1896,26 @@ button:hover, button:focus {
     display: inline-block;
     -webkit-animation: inner-left 1s 1s ease both;
             animation: inner-left 1s 1s ease both;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
   }
   
   .cafe-inner {
     display: inline-block;
     -webkit-animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
             animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
   }
   
   .mozart-inner {
     -webkit-animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
             animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
   }
   
   .title {
     -webkit-animation: outer-left 1s 1s ease both;
             animation: outer-left 1s 1s ease both;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
   }
   
   .cafe > .cafe-inner {
@@ -1930,7 +1936,7 @@ button:hover, button:focus {
     -webkit-animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
             animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
             height:300px;
-            animation-delay: 5s;
+            animation-delay: 1.5s;
   }
   @-webkit-keyframes image-in {
     from {
@@ -7277,6 +7283,7 @@ nav.top-right {
 .res span{
   margin:30px 0;
 }
+
 .item_res:hover .res_over{
   transform: translateY(0%);
 }
@@ -7294,7 +7301,7 @@ nav.top-right {
 
 }
 .responsive{
-  display:none;
+  display:none
 }
 .responsive{
   
@@ -7307,7 +7314,13 @@ nav.top-right {
   position: fixed;
   width:100%;
   max-width:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
   max-height:100vh;
+  overflow:hidden;
+  
 }
 @media only screen and (max-width: 768px){
   .responsive{
@@ -7328,12 +7341,16 @@ nav.top-right {
 .responsive-content{
   width:50%;
   height:50vh;
-  position: absolute;
+  position: fixed;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: hidden;
 }
 .responsive-content img{
 width:200px;
@@ -7347,4 +7364,8 @@ position: absolute;
 .responsive-content h1{
   font-size:18px;
   line-height:20px;
+  margin-top:200px;
+}
+html, body{
+  overflow-x: hidden;
 }

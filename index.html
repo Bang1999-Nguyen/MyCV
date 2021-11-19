@@ -29,6 +29,7 @@
 
 <body>
   <!-- HEADER -->
+  
   <div class="loader">
     <div class="loading">
       <div class="loading-text">
@@ -61,13 +62,14 @@
       <div class="cell d-6"></div>
     </div>
   </div>
-  <div class="responsive">
-    <div class="responsive-content">
-      <img src="./img/flame-teamwork.png"></img>
-      <h1>Website only supports Desktop and iPad Service.</h1>
-    </div>
-  </div>
+  
   <div class="main_Sec">
+    <div class="responsive">
+      <div class="responsive-content">
+        <img src="./img/flame-teamwork.png"></img>
+        <h1>Website only supports Desktop and iPad Service.</h1>
+      </div>
+    </div>
     <div id="header" class="sec">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -150,13 +152,13 @@
         </div>
         <div class="content_about">
           <div class="content_infor">
-            <div class="content_carousel_template animate__animated animate__fadeInRight animate__delay-4s">
+            <div class="content_carousel_template animate__animated animate__fadeInRight animate__delay-2s">
               <div class="img">
               </div>
               <div class="arrow-1 animated hinge infinite zoomIn animate__delay-4s">
               </div>
             </div>
-            <div class="content_carousel animate__animated animate__fadeInRight animate__delay-4s">
+            <div class="content_carousel animate__animated animate__fadeInRight animate__delay-3s">
               <div class="overlay">
                 <h1>I'm
                   <span class="txt-rotate" data-period="2000"
@@ -351,7 +353,7 @@
               <h3>Personal Projects</h3>
               <h2>April 2021 - Present</h2>
               <ul>
-                <li>Have 6 months of experience with Front-end projects at Cybersoft - Cyberlearn Programing Education
+                <li>Have 8 months of experience with Front-end projects at Cybersoft - Cyberlearn Programing Education
                   Center.</li>
                 <li>Have Experience of web UI framework like Ant Design, Bootstrap, Tailwind CSS...</li>
 
@@ -761,7 +763,6 @@
                   Demo</a></span>
             </div>
           </div>
-
         </div>
         <div class="item_res_1 item_res">
           <div class="res_over">
@@ -892,10 +893,13 @@
     activeMenu()
     window.addEventListener('scroll', activeMenu)
     var loader = document.querySelector('.loader');
+    var mozart = document.querySelector('.mozart ');
+    var title =  document.querySelector('.title-inner');
+    var cafe = document.querySelector('.cafe');
     window.addEventListener('load', function () {
-
       setTimeout(() => {
         loader.style.display = "none"
+        document.querySelector('.mozart').add('active')
         window.scrollTo(0, 0)
       }, 3500);
     })
