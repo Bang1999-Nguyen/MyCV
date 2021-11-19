@@ -5573,9 +5573,9 @@ nav.top-right {
   .content_carousel{
     margin-top:-400px;
     display:flex;
-    width:55%;
+    width:45%;
     position: absolute;
-    right:130px;
+    right:170px;
     top:-80px;
     margin: 0 auto;
     
@@ -7292,4 +7292,63 @@ nav.top-right {
 
 
 
+}
+.responsive{
+  display:none;
+}
+.responsive{
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+  background: #e6ded7;
+  z-index:10000000000000000!important;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+@media only screen and (max-width: 768px){
+  .responsive{
+    display:block;
+  }
+  .loader{
+    display:none
+  }
+}
+@media only screen and (min-width: 992px) and (max-width:1200px){
+  .responsive{
+    display:block;
+  }
+  .loader{
+    display:none
+  }
+}
+.responsive-content{
+  width:50%;
+  height:50vh;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column-reverse;
+}
+.responsive-content img{
+width:200px;
+height:200px;
+margin: 0 auto;
+position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+}
+.responsive-content h1{
+  font-size:18px;
+  line-height:20px;
 }
